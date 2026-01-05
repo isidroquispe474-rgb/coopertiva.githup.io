@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Minerales y Concentrados | Totora Vaqueria R.L.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#1f2937;
+}
+
+/* HEADER */
+header{
+    background:#fff;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 6px rgba(0,0,0,.05);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:bold;
+}
+
+.logo span{
+    background:#2563eb;
+    color:#fff;
+    padding:8px;
+    border-radius:50%;
+    font-size:14px;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:20px;
+    color:#374151;
+    font-weight:500;
+}
+
+nav a.active{
+    background:#2563eb;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:6px;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px 40px;
+}
+
+.hero .tag{
+    display:inline-block;
+    background:#e0e7ff;
+    color:#2563eb;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:0 auto;
+    color:#6b7280;
+    font-size:15px;
+}
+
+/* CARDS */
+.container{
+    max-width:1100px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:14px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.icon{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    color:#fff;
+    font-size:18px;
+}
+
+.icon.mineral{ background:#334155; }
+.icon.concentrado{ background:#14b8a6; }
+
+.badge{
+    font-size:12px;
+    background:#f1f5f9;
+    padding:4px 10px;
+    border-radius:20px;
+}
+
+.card h3{
+    margin-bottom:8px;
+}
+
+.card p{
+    font-size:14px;
+    color:#6b7280;
+    margin-bottom:15px;
+}
+
+.pureza{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.pureza span{
+    color:#2563eb;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    font-size:13px;
+    margin-bottom:6px;
+}
+
+ul li::before{
+    content:"✔";
+    color:#22c55e;
+    margin-right:6px;
+}
+
+/* CTA */
+.cta{
+    margin:60px 0;
+    padding:50px 20px;
+    background:linear-gradient(90deg,#2563eb,#16a34a);
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    margin-bottom:10px;
+}
+
+.cta p{
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+.cta ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.cta ul li{
+    font-size:14px;
+}
+
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:#cbd5e1;
+    padding:40px;
+}
+
+footer .footer-top{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+footer a{
+    color:#94a3b8;
+    text-decoration:none;
+    margin-right:15px;
+    font-size:13px;
+}
+
+footer .copy{
+    font-size:13px;
+    border-top:1px solid #1e293b;
+    padding-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span>TV</span> Totora Vaqueria R.L.
+    </div>
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="producto.html" class="active">Productos</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="tag">Nuestros Productos</div>
+    <h1>Minerales y Concentrados</h1>
+    <p>
+        Ofrecemos una amplia gama de minerales y concentrados de alta calidad,
+        procesados con tecnología de punta y certificados internacionalmente.
+    </p>
+</section>
+
+<section class="container">
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon mineral">💎</div>
+                <div class="badge">Mineral</div>
+            </div>
+            <h3>Plomo (Pb)</h3>
+            <p>Concentrado de plomo para uso en baterías, soldaduras y protección contra radiación.</p>
+            <div class="pureza">Pureza <span>60–70%</span></div>
+            <ul>
+                <li>Grado industrial</li>
+                <li>Análisis detallado</li>
+                <li>Empaque seguro</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon concentrado">🧪</div>
+                <div class="badge">Concentrado</div>
+            </div>
+            <h3>Concentrados Polimetálicos</h3>
+            <p>Mezclas optimizadas de minerales para diferentes aplicaciones industriales específicas.</p>
+            <div class="pureza">Pureza <span>Variable</span></div>
+            <ul>
+                <li>Composición personalizada</li>
+                <li>Control de calidad</li>
+                <li>Análisis químico completo</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon mineral">⚙️</div>
+                <div class="badge">Mineral</div>
+            </div>
+            <h3>Zinc (Zn)</h3>
+            <p>Mineral de zinc de alta pureza, esencial para la industria metalúrgica.</p>
+            <div class="pureza">Pureza <span>65–72%</span></div>
+            <ul>
+                <li>Alta pureza</li>
+                <li>Calidad garantizada</li>
+                <li>Certificado de análisis</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon mineral">⭐</div>
+                <div class="badge">Mineral Precioso</div>
+            </div>
+            <h3>Plata (Ag)</h3>
+            <p>Mineral de plata de excelente calidad para aplicaciones industriales y de inversión.</p>
+            <div class="pureza">Pureza <span>85–95%</span></div>
+            <ul>
+                <li>Altísima pureza</li>
+                <li>Trazabilidad completa</li>
+                <li>Estándares internacionales</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta">
+    <h2>¿Interesado en Nuestros Productos?</h2>
+    <p>
+        Contamos con certificaciones internacionales y análisis químicos
+        detallados para cada producto.
+    </p>
+    <ul>
+        <li>✔ Análisis químico incluido</li>
+        <li>✔ Certificación internacional</li>
+        <li>✔ Logística disponible</li>
+    </ul>
+</section>
+
+<footer>
+    <div class="footer-top">
+        <strong>Totora Vaqueria R.L.</strong>
+        <div>
+            <a href="inicio.html">Inicio</a>
+        </div>
+    </div>
+    <div class="copy">
+        © 2026 Cooperativa Minera Totora Vaqueria R.L. Todos los derechos reservados.
+    </div>
+</footer>
+
+</body>
+</html>
